@@ -24,4 +24,3 @@ e.# [Real Estate Django Project](http://159.65.226.26/)
 - [Gunicorn](https://gunicorn.org/) -  Python WSGI HTTP Server for UNIX. It's a pre-fork worker model
 - [Nginx](https://www.nginx.com/) - Web Server for reverse proxy, load balancer, mail proxy and HTTP cache
 
-
