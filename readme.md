@@ -1,9 +1,3 @@
-e.# [Real Estate Django Project](http://159.65.226.26/)
-
->> Fully reponsive Real Estate Application. From development to deployment. Includes Admin area.
-
-<img src="https://res.cloudinary.com/dxbk4zeyc/image/upload/v1542841011/real-estate-django.png" title="Real Estate Django" alt="Real Estate Django">
-
 ## Built With
 
 - [Python 3](https://www.python.org/) - Programming language that lets you work quickly and integrate systems more effectively
