@@ -4,6 +4,8 @@
 
 {% block title %} | Welcome{% endblock %}
 
+{% load static %}
+
 {% block content %}
 <!-- Showcase -->
 <section id="showcase" >
@@ -141,42 +143,192 @@
       {% endif %}
 </section>
 
-<section id="" class="py-5 text-white" style="background-color:black;">
-  <div class="container">
-    <div class="row text-center">
-      <div class="col-md-4">
-        <i class="fas fa-cogs fa-4x mr-4"></i>
-        <hr />
-        <h3>Consulting Services</h3>
-        <p>
-          Our management consulting services focus on our clients' most critical
-          issues and opportunities: strategy, marketing, organization, operations, technology,
-          transformation, digital, advanced analytics, corporate finance,
-          mergers & acquisitions and sustainability across all industries and geographies.
-        </p>
+<section style="background-color: #eee;">
+  <div class="text-center container py-5">
+    <h4 class="mt-4 mb-5"><strong>Our Upcoming Projects</strong></h4>
+
+    <div class="row">
+      <div class="col-lg-4 col-md-12 mb-4">
+        <div class="card">
+          <div class="bg-image hover-zoom ripple ripple-surface ripple-surface-light"
+            data-mdb-ripple-color="light">
+            <img src="{% static 'img/4.jpg' %}"
+              class="w-100" />
+            <a href="#!">
+              <div class="mask">
+                <div class="d-flex justify-content-start align-items-end h-100">
+                  <h5><span class="badge bg-success ms-2">Eco</span></h5>
+                </div>
+              </div>
+              <div class="hover-overlay">
+                <div class="mask" style="background-color: rgba(238, 14, 14, 0.15);"></div>
+              </div>
+            </a>
+          </div>
+          <div class="card-body">
+            <a href="" class="text-reset">
+              <h5 class="card-title mb-3">Product name</h5>
+            </a>
+            <a href="" class="text-reset">
+              <p>Category</p>
+            </a>
+            <h6 class="mb-3">$61.99</h6>
+          </div>
+        </div>
       </div>
-      <div class="col-md-4">
-        <i class="fas fa-home fa-4x mr-4"></i>
-        <hr />
-        <h3>Propery Management</h3>
-        <p>
-          Property management is the daily oversight of residential,
-          commercial, or industrial real estate by a third-party contractor.
-          Generally, property managers take responsibility for day-to-day repairs and ongoing maintenance,
-          security, and upkeep of properties. They usually work for the owners of investment properties
-          such as apartment and condominium complexes, private home communities, shopping centers,
-          and industrial parks.
-        </p>
+
+      <div class="col-lg-4 col-md-6 mb-4">
+        <div class="card">
+          <div class="bg-image hover-zoom ripple ripple-surface ripple-surface-light"
+            data-mdb-ripple-color="light">
+            <img src="https://images.pexels.com/photos/1463917/pexels-photo-1463917.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+              class="w-100" />
+            <a href="#!">
+              <div class="mask">
+                <div class="d-flex justify-content-start align-items-end h-100">
+                  <h5><span class="badge bg-success ms-2">Eco</span></h5>
+                </div>
+              </div>
+              <div class="hover-overlay">
+                <div class="mask" style="background-color: rgba(251, 251, 251, 0.15);"></div>
+              </div>
+            </a>
+          </div>
+          <div class="card-body">
+            <a href="" class="text-reset">
+              <h5 class="card-title mb-3">Product name</h5>
+            </a>
+            <a href="" class="text-reset">
+              <p>Category</p>
+            </a>
+            <h6 class="mb-3">$61.99</h6>
+          </div>
+        </div>
       </div>
-      <div class="col-md-4">
-        <i class="fas fa-money-bill-alt fa-4x mr-4"></i>
-        <hr />
-        <h3>Renting & Selling</h3>
-        <p>
-          Renting can provide some security because you know you can return to your home.
-          Selling a house and then buying another home incurs costs,
-          so it may be cheaper to rent out your house and move back in when you return
-        </p>
+
+      <div class="col-lg-4 col-md-6 mb-4">
+        <div class="card">
+          <div class="bg-image hover-zoom ripple" data-mdb-ripple-color="light">
+            <img src="https://images.pexels.com/photos/3656188/pexels-photo-3656188.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+              class="w-100" />
+            <a href="#!">
+              <div class="mask">
+                <div class="d-flex justify-content-start align-items-end h-100">
+                  <h5><span class="badge bg-danger ms-2">-10%</span></h5>
+                </div>
+              </div>
+              <div class="hover-overlay">
+                <div class="mask" style="background-color: rgba(251, 251, 251, 0.15);"></div>
+              </div>
+            </a>
+          </div>
+          <div class="card-body">
+            <a href="" class="text-reset">
+              <h5 class="card-title mb-3">Product name</h5>
+            </a>
+            <a href="" class="text-reset">
+              <p>Category</p>
+            </a>
+            <h6 class="mb-3">
+              <s>$61.99</s><strong class="ms-2 text-danger">$50.99</strong>
+            </h6>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-lg-4 col-md-12 mb-4">
+        <div class="card">
+          <div class="bg-image hover-zoom ripple" data-mdb-ripple-color="light">
+            <img src="https://images.pexels.com/photos/259588/pexels-photo-259588.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+              class="w-100" />
+            <a href="#!">
+              <div class="mask">
+                <div class="d-flex justify-content-start align-items-end h-100">
+                  <h5>
+                    <span class="badge bg-success ms-2">Eco</span><span
+                      class="badge bg-danger ms-2">-10%</span>
+                  </h5>
+                </div>
+              </div>
+              <div class="hover-overlay">
+                <div class="mask" style="background-color: rgba(251, 251, 251, 0.15);"></div>
+              </div>
+            </a>
+          </div>
+          <div class="card-body">
+            <a href="" class="text-reset">
+              <h5 class="card-title mb-3">Product name</h5>
+            </a>
+            <a href="" class="text-reset">
+              <p>Category</p>
+            </a>
+            <h6 class="mb-3">
+              <s>$61.99</s><strong class="ms-2 text-danger">$50.99</strong>
+            </h6>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-lg-4 col-md-6 mb-4">
+        <div class="card">
+          <div class="bg-image hover-zoom ripple ripple-surface ripple-surface-light"
+            data-mdb-ripple-color="light">
+            <img src="https://images.pexels.com/photos/1475938/pexels-photo-1475938.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+              class="w-100" />
+            <a href="#!">
+              <div class="mask">
+                <div class="d-flex justify-content-start align-items-end h-100"></div>
+              </div>
+              <div class="hover-overlay">
+                <div class="mask" style="background-color: rgba(251, 251, 251, 0.15);"></div>
+              </div>
+            </a>
+          </div>
+          <div class="card-body">
+            <a href="" class="text-reset">
+              <h5 class="card-title mb-3">Product name</h5>
+            </a>
+            <a href="" class="text-reset">
+              <p>Category</p>
+            </a>
+            <h6 class="mb-3">$61.99</h6>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-lg-4 col-md-6 mb-4">
+        <div class="card">
+          <div class="bg-image hover-zoom ripple" data-mdb-ripple-color="light">
+            <img src="https://images.pexels.com/photos/3288104/pexels-photo-3288104.png?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+              class="w-100" />
+            <a href="#!">
+              <div class="mask">
+                <div class="d-flex justify-content-start align-items-end h-100">
+                  <h5>
+                    <span class="badge bg-primary ms-2">New</span><span
+                      class="badge bg-success ms-2">Eco</span><span class="badge bg-danger ms-2">-10%</span>
+                  </h5>
+                </div>
+              </div>
+              <div class="hover-overlay">
+                <div class="mask" style="background-color: rgba(251, 251, 251, 0.15);"></div>
+              </div>
+            </a>
+          </div>
+          <div class="card-body">
+            <a href="" class="text-reset">
+              <h5 class="card-title mb-3">Product name</h5>
+            </a>
+            <a href="" class="text-reset">
+              <p>Category</p>
+            </a>
+            <h6 class="mb-3">
+              <s>$61.99</s><strong class="ms-2 text-danger">$50.99</strong>
+            </h6>
+          </div>
+        </div>
       </div>
     </div>
   </div>

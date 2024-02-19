@@ -31,11 +31,11 @@ ALLOWED_HOSTS = ['localhost', '127.0.0.1']
 # Application definition
 
 INSTALLED_APPS = [
-    'pages.apps.PagesConfig',
-    'listings.apps.ListingsConfig',
-    'realtors.apps.RealtorsConfig',
-    'accounts.apps.AccountsConfig',
-    'contacts.apps.ContactsConfig',
+    'pages.apps.PagesConfig', # new app for pages
+    'listings.apps.ListingsConfig', # new app for listings
+    'realtors.apps.RealtorsConfig', # new app for realtors
+    'accounts.apps.AccountsConfig', # new app for accounts
+    'contacts.apps.ContactsConfig', # new app for contacts
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
