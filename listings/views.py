@@ -1,3 +1,4 @@
+# listings/views.py
 from django.shortcuts import get_object_or_404, render
 from django.core.paginator import EmptyPage, PageNotAnInteger, Paginator
 from .choices import price_choices, bedroom_choices, state_choices 
@@ -44,7 +45,7 @@ def search(request):
         if city:
             queryset_list = queryset_list.filter(city__iexact=city)
 
-    # STATE
+    # AREA 
     if 'area' in request.GET:
         state = request.GET['area']
         if state:
