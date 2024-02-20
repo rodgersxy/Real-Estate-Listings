@@ -1,3 +1,4 @@
+# accounts/views.py
 from django.shortcuts import render, redirect
 from django.contrib import messages, auth
 from django.contrib.auth.models import User
@@ -16,7 +17,7 @@ def register(request):
 
         # Check if passwords match
         if password == password2:
-            #  Check username
+            #  Check username availability
             if User.objects.filter(username=username).exists():
                 messages.error(request, 'The username already exists')
                 return redirect('register')
@@ -37,7 +38,7 @@ def register(request):
     else:
         return render(request, 'accounts/register.html')
 
-
+# login and logout
 def login(request):
     if request.method == 'POST':
         username = request.POST['username']
@@ -62,7 +63,7 @@ def logout(request):
         messages.success(request, 'You are now logged out')
         return redirect('login')
 
-
+# dashboard and redirect to dashboard.html
 def dashboard(request):
     user_contacts = Contact.objects.order_by('-contact_date').filter(user_id=request.user.id)
 

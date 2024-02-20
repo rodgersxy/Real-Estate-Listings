@@ -151,126 +151,94 @@
     <div class="row">
       <div class="col-lg-4 col-md-12 mb-4">
         <div class="card">
-          <div class="bg-image hover-zoom ripple ripple-surface ripple-surface-light"
-            data-mdb-ripple-color="light">
-            <img src="{% static 'img/4.jpg' %}"
-              class="w-100" />
-            <a href="">
-              <div class="mask">
-                <div class="d-flex justify-content-start align-items-end h-100">
-                  <h5><span class="badge bg-success ms-2">New</span></h5>
-                </div>
-              </div>
-              <div class="hover-overlay">
-                <div class="mask" style="background-color: rgba(238, 14, 14, 0.15);"></div>
-              </div>
-            </a>
-          </div>
-          <div class="card-body">
-            <a href="{% url 'listings' %}" class="text-reset">
-              <h5 class="card-title mb-3">Listings</h5>
-            </a>
-            <a href="{% url 'listings' %}" class="text-reset">
-              <p>View all listings</p>
-            </a>
-            <h6 class="mb-3">Ksh 90M</h6>
-          </div>
+            <div class="bg-image hover-zoom ripple ripple-surface ripple-surface-light" data-mdb-ripple-color="light">
+                <a href="{% url 'listings' %}">
+                    <img src="{% static 'img/4.jpg' %}" class="w-100" />
+                    <div class="mask">
+                        <div class="d-flex justify-content-start align-items-end h-100">
+                            <h5><span class="badge bg-success ms-2">New</span></h5>
+                        </div>
+                    </div>
+                    <div class="hover-overlay">
+                        <div class="mask" style="background-color: rgba(238, 14, 14, 0.15);"></div>
+                    </div>
+                </a>
+            </div>
+            <div class="card-body">
+                <a href="{% url 'listings' %}" class="text-reset">
+                    <h5 class="card-title mb-3">Listings</h5>
+                </a>
+                <a href="{% url 'listings' %}" class="text-reset">
+                    <p>View all listings</p>
+                </a>
+                <h6 class="mb-3">Ksh 90M</h6>
+            </div>
         </div>
-      </div>
-
-      <div class="col-lg-4 col-md-6 mb-4">
-        <div class="card">
-          <div class="bg-image hover-zoom ripple ripple-surface ripple-surface-light"
-            data-mdb-ripple-color="light">
-            <img src="https://images.pexels.com/photos/1463917/pexels-photo-1463917.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
-              class="w-100" />
-            <a href="#!">
-              <div class="mask">
-                <div class="d-flex justify-content-start align-items-end h-100">
-                  <h5><span class="badge bg-success ms-2">Upcoming</span></h5>
-                </div>
-              </div>
-              <div class="hover-overlay">
-                <div class="mask" style="background-color: rgba(251, 251, 251, 0.15);"></div>
-              </div>
-            </a>
-          </div>
-          <div class="card-body">
-            <a href="{% url 'listings' %}" class="text-reset">
-              <h5 class="card-title mb-3">Listings</h5>
-            </a>
-            <a href="" class="text-reset">
-              <p>View all listings</p>
-            </a>
-            <h6 class="mb-3">Ksh 610M</h6>
-          </div>
-        </div>
-      </div>
-
-      <div class="col-lg-4 col-md-6 mb-4">
-        <div class="card">
-          <div class="bg-image hover-zoom ripple" data-mdb-ripple-color="light">
-            <img src="https://images.pexels.com/photos/3656188/pexels-photo-3656188.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
-              class="w-100" />
-            <a href="#!">
-              <div class="mask">
-                <div class="d-flex justify-content-start align-items-end h-100">
-                  <h5><span class="badge bg-danger ms-2">-20%</span></h5>
-                </div>
-              </div>
-              <div class="hover-overlay">
-                <div class="mask" style="background-color: rgba(251, 251, 251, 0.15);"></div>
-              </div>
-            </a>
-          </div>
-          <div class="card-body">
-            <a href="{% url 'listings' %}" class="text-reset">
-              <h5 class="card-title mb-3">Listings</h5>
-            </a>
-            <a href="{% url 'listings' %}" class="text-reset">
-              <p>View all listings</p>
-            </a>
-            <h6 class="mb-3">
-              <s>Ksh 90M</s><strong class="ms-2 text-danger">Ksh 70M</strong>
-            </h6>
-          </div>
-        </div>
-      </div>
     </div>
+    
 
-    <div class="row">
-      <div class="col-lg-4 col-md-12 mb-4">
-        <div class="card">
-          <div class="bg-image hover-zoom ripple" data-mdb-ripple-color="light">
-            <img src="https://images.pexels.com/photos/259588/pexels-photo-259588.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
-              class="w-100" />
-            <a href="#!">
-              <div class="mask">
-                <div class="d-flex justify-content-start align-items-end h-100">
-                  <h5>
-                    <span class="badge bg-success ms-2">New</span><span
-                      class="badge bg-danger ms-2">-15%</span>
-                  </h5>
-                </div>
-              </div>
-              <div class="hover-overlay">
-                <div class="mask" style="background-color: rgba(251, 251, 251, 0.15);"></div>
-              </div>
-            </a>
+    <div class="col-lg-4 col-md-6 mb-4">
+      <div class="card">
+          <div class="bg-image hover-zoom ripple ripple-surface ripple-surface-light"
+              data-mdb-ripple-color="light">
+              <a href="{% url 'listings' %}">
+                  <img src="https://images.pexels.com/photos/1463917/pexels-photo-1463917.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+                      class="w-100" />
+                  <div class="mask">
+                      <div class="d-flex justify-content-start align-items-end h-100">
+                          <h5><span class="badge bg-success ms-2">Upcoming</span></h5>
+                      </div>
+                  </div>
+                  <div class="hover-overlay">
+                      <div class="mask" style="background-color: rgba(251, 251, 251, 0.15);"></div>
+                  </div>
+              </a>
           </div>
           <div class="card-body">
+              <a href="{% url 'listings' %}" class="text-reset">
+                  <h5 class="card-title mb-3">Listings</h5>
+              </a>
+              <a href="{% url 'listings' %}" class="text-reset">
+                  <p>View all listings</p>
+              </a>
+              <h6 class="mb-3">Ksh 610M</h6>
+          </div>
+      </div>
+  </div>
+  
+
+  <div class="col-lg-4 col-md-6 mb-4">
+    <div class="card">
+        <div class="bg-image hover-zoom ripple" data-mdb-ripple-color="light">
+            <a href="{% url 'listings' %}">
+                <img src="https://images.pexels.com/photos/3656188/pexels-photo-3656188.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+                    class="w-100" />
+                <div class="mask">
+                    <div class="d-flex justify-content-start align-items-end h-100">
+                        <h5><span class="badge bg-danger ms-2">-20%</span></h5>
+                    </div>
+                </div>
+                <div class="hover-overlay">
+                    <div class="mask" style="background-color: rgba(251, 251, 251, 0.15);"></div>
+                </div>
+            </a>
+        </div>
+        <div class="card-body">
             <a href="{% url 'listings' %}" class="text-reset">
-              <h5 class="card-title mb-3">Listings</h5>
+                <h5 class="card-title mb-3">Listings</h5>
             </a>
             <a href="{% url 'listings' %}" class="text-reset">
-              <p>View all listings</p>
+                <p>View all listings</p>
             </a>
             <h6 class="mb-3">
-              <s>ksh 80M</s><strong class="ms-2 text-danger">ksh 70M</strong>
+                <s>Ksh 90M</s><strong class="ms-2 text-danger">Ksh 70M</strong>
             </h6>
-          </div>
         </div>
-      </div>
+    </div>
+</div>
+
+
+    
 
       <div class="col-lg-4 col-md-6 mb-4">
         <div class="card">
@@ -301,36 +269,66 @@
 
       <div class="col-lg-4 col-md-6 mb-4">
         <div class="card">
+            <div class="bg-image hover-zoom ripple ripple-surface ripple-surface-light"
+                data-mdb-ripple-color="light">
+                <a href="{% url 'listings' %}">
+                    <img src="https://images.pexels.com/photos/36362/pexels-photo.jpg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+                        class="w-100" />
+                    <div class="mask">
+                        <div class="d-flex justify-content-start align-items-end h-100"></div>
+                    </div>
+                    <div class="hover-overlay">
+                        <div class="mask" style="background-color: rgba(251, 251, 251, 0.15);"></div>
+                    </div>
+                </a>
+            </div>
+            <div class="card-body">
+                <a href="{% url 'listings' %}" class="text-reset">
+                    <h5 class="card-title mb-3">Listings</h5>
+                </a>
+                <a href="{% url 'listings' %}" class="text-reset">
+                    <p>View all listings</p>
+                </a>
+                <h6 class="mb-3">Ksh 190M</h6>
+            </div>
+        </div>
+    </div>
+    
+
+    <div class="col-lg-4 col-md-6 mb-4">
+      <div class="card">
           <div class="bg-image hover-zoom ripple" data-mdb-ripple-color="light">
-            <img src="https://images.pexels.com/photos/3288104/pexels-photo-3288104.png?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
-              class="w-100" />
-            <a href="#!">
-              <div class="mask">
-                <div class="d-flex justify-content-start align-items-end h-100">
-                  <h5>
-                    <span class="badge bg-warning ms-2">Hot</span><span
-                      class="badge bg-success ms-2">Complete</span><span class="badge bg-danger ms-2">-10%</span>
-                  </h5>
-                </div>
-              </div>
-              <div class="hover-overlay">
-                <div class="mask" style="background-color: rgba(251, 251, 251, 0.15);"></div>
-              </div>
-            </a>
+              <a href="{% url 'listings' %}">
+                  <img src="https://images.pexels.com/photos/1475938/pexels-photo-1475938.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+                      class="w-100" />
+                  <div class="mask">
+                      <div class="d-flex justify-content-start align-items-end h-100">
+                          <h5>
+                              <span class="badge bg-warning ms-2">Hot</span><span
+                                  class="badge bg-success ms-2">Complete</span><span
+                                  class="badge bg-danger ms-2">-10%</span>
+                          </h5>
+                      </div>
+                  </div>
+                  <div class="hover-overlay">
+                      <div class="mask" style="background-color: rgba(251, 251, 251, 0.15);"></div>
+                  </div>
+              </a>
           </div>
           <div class="card-body">
-            <a href="{% url 'listings' %}" class="text-reset">
-              <h5 class="card-title mb-3">Listings</h5>
-            </a>
-            <a href="{% url 'listings' %}" class="text-reset">
-              <p>View all listings</p>
-            </a>
-            <h6 class="mb-3">
-              <s>Ksh 100M</s><strong class="ms-2 text-danger">Ksh 90M</strong>
-            </h6>
+              <a href="{% url 'listings' %}" class="text-reset">
+                  <h5 class="card-title mb-3">Listings</h5>
+              </a>
+              <a href="{% url 'listings' %}" class="text-reset">
+                  <p>View all listings</p>
+              </a>
+              <h6 class="mb-3">
+                  <s>Ksh 100M</s><strong class="ms-2 text-danger">Ksh 90M</strong>
+              </h6>
           </div>
-        </div>
       </div>
+  </div>
+  
     </div>
   </div>
 </section>
