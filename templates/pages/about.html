@@ -90,28 +90,47 @@
 </section>
 
 <!-- Team -->
+<style>
+  /* Add this style block to your template */
+  .team-member-img {
+    height: 150px; /* Set a specific height for the images */
+    width: 150px;  /* Set a specific width for the images */
+    object-fit: cover; /* Maintain aspect ratio by covering the container */
+    border-radius: 50%; /* Make the images rounded */
+  }
+</style>
+
 <section id="team" class="py-5">
   <div class="container">
     <h2 class="text-center">Our Team</h2>
     <div class="row text-center">
       {% if realtors %}
         {% for realtor in realtors %}
-        <div class="col-md-4">
+          <div class="col-md-4">
             <img
               src="{{ realtor.photo.url }}"
               alt=""
-              class="rounded-circle mb-3"
+              class="team-member-img mb-3"
             />
-            <h4>{{realtor.name}}</h4>
+            <h4>{{ realtor.name }}</h4>
             <p class="text-success">
               <i class="fas fa-award text-success mb-3"></i> Realtor
             </p>
             <hr />
             <p><i class="fas fa-phone"></i> {{ realtor.phone }}</p>
-            <p><i class="fas fa-envelope-open"></i> {{realtor.email}}</p>
+            <p><i class="fas fa-envelope-open"></i> {{ realtor.email }}</p>
+            <a
+    data-mdb-ripple-init
+    class="btn text-white btn-floating m-1"
+    style="background-color: hsl(142, 70%, 49%);"
+    href="https://web.whatsapp.com/send?phone=+254726746234" 
+    role="button"
+>
+    <i class="fab fa-whatsapp"></i>
+</a>
           </div>
         {% endfor %}
-      {%  else %}
+      {% else %}
         <div class="col-md-12">
           <p>No realtors available</p>
         </div>
@@ -119,5 +138,6 @@
     </div>
   </div>
 </section>
+
 
 {% endblock %}
