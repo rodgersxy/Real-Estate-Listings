@@ -2,7 +2,7 @@
 from django.shortcuts import render
 from django.http import HttpResponse
 
-# Import choices (presumably constants) from a module named 'choices'
+# Import choices from a module named 'choices'
 from listings.choices import price_choices, bedroom_choices, state_choices
 
 # Import models from the 'listings' and 'realtors' apps
