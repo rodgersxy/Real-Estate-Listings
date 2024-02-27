@@ -42,7 +42,7 @@
                 <img class="card-img-top" src="{{ listing.photo_main.url }}" alt="">
                 <div class="card-img-overlay">
                   <h2>
-                    <span class="badge badge-secondary text-white">Ksh{{ listing.price | intcomma }}</span>
+                    <span class="badge badge-danger text-white">Ksh{{ listing.price | intcomma }}</span>
                   </h2>
                 </div>
                 <div class="card-body">
@@ -74,7 +74,7 @@
                       <i class="fas fa-clock"></i> {{ listing.list_date | timesince }}</div>
                   </div>
                   <hr>
-                  <a href="{% url 'listing' listing.id %}" class="btn btn-primary btn-block">More Info</a>
+                  <a href="{% url 'listing' listing.id %}" class="btn btn-danger btn-block">More Info</a>
                 </div>
               </div>
             </div>

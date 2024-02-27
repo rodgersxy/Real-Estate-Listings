@@ -12,7 +12,7 @@
   <div class="container text-center" >
     <div class="home-search p-5" style="background-color:darkblue;">
       <div class="overlay p-5" style="background-color:rgb(35, 178, 221); border-radius: 10px;">
-        <h1 class="display-4 mb-4">Say goodbye to endless searching</h1>
+        <h1 class="display-4 mb-4">Say Goodbye To Endless Searching</h1>
         <p class="lead">
           Find your perfect match: Search effortlessly through our extensive listings and discover your dream home today.
           Experience the future of home buying: Explore listings, connect with agents, and take the first step towards homeownership on our user-friendly platform.
@@ -98,7 +98,7 @@
               <img class="card-img-top" src="{{ listing.photo_main.url }}" alt="" />
               <div class="card-img-overlay">
                 <h2>
-                  <span class="badge badge-secondary text-white">Ksh{{ listing.price | intcomma}}</span>
+                  <span class="badge badge-danger text-white">Ksh{{ listing.price | intcomma}}</span>
                 </h2>
               </div>
               <div class="card-body">
@@ -128,7 +128,7 @@
                   <div class="col-6"><i class="fas fa-clock"></i> {{ listing.list_date | timesince }}</div>
                 </div>
                 <hr />
-                <a href="{% url 'listing' listing.id %}" class="btn btn-primary btn-block"
+                <a href="{% url 'listing' listing.id %}" class="btn btn-danger btn-block"
                   >More Info</a
                 >
               </div>
