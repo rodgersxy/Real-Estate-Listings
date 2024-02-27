@@ -4,6 +4,13 @@ from datetime import datetime
 
 # Create your models here.
 class Contact(models.Model):
+    """
+    Contact model
+    args:
+        models.Model
+    display fields:
+        listing, listing_id, name, email, phone, message, contact_date, user_id
+    """
     listing = models.CharField(max_length=200)
     listing_id = models.IntegerField()
     name = models.CharField(max_length=200)

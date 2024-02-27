@@ -4,6 +4,12 @@ from django.core.mail import send_mail
 from .models import Contact
 
 def contact (request):
+    """
+    Contact view function
+    args:
+        request object
+    
+    """
     if request.method == "POST":
         listing_id = request.POST['listing_id']
         listing = request.POST['listing']
