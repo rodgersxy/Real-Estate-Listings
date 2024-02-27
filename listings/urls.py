@@ -1,4 +1,4 @@
-# listings/urls.pyS
+# listings/urls.py
 from django.urls import path
 
 from . import views

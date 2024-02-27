@@ -7,6 +7,11 @@ from .models import Listing
 
 
 def index(request):
+    """
+    Index view function
+    args:
+        request object
+    """
     listings = Listing.objects.order_by('-list_date').filter(is_published=True)
 
     paginator = Paginator(listings, 6)
@@ -21,6 +26,12 @@ def index(request):
 
 
 def listing(request, listing_id):
+    """
+    Listing view function
+    args:
+        request object
+        listing_id
+    """
     listing = get_object_or_404(Listing, pk=listing_id)
 
     context = {

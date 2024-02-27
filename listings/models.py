@@ -5,6 +5,13 @@ from realtors.models import Realtor
 
 
 class Listing(models.Model):
+    """
+    Listing model
+    args:
+        models.Model
+    display fields:
+        realtor, title, address, city, area, zipcode, description, price, bedrooms, bathrooms, garage, sqft, lot_size, photo_main, photo_1, photo_2, photo_3, photo_4, photo_5, photo_6, is_published, list_date
+    """
     realtor = models.ForeignKey(Realtor, on_delete=models.DO_NOTHING)
     title = models.CharField(max_length=200)
     address = models.CharField(max_length=200)
