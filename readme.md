@@ -8,16 +8,27 @@
 
 ## Tools, libraries and resources used:
 
-- [FontAwesome](https://fontawesome.com/)  
+- [FontAwesome](https://fontawesome.com/)  FOR ICONS
 - [Bootstrap](https://getbootstrap.com/)
 
-## MySQL used commands
+### fork or  clone   
+```
+git clone url  
+```
+
+## some of MySQL used commands
 ```
 SHOW DATABASES;  
 SHOW TABLES;  
 eg  
 SELECT * FROM listings_listing;  
 ``` 
+
+## How to Run the real estate project:  
+```
+source venv/bin/activate    
+python manage.py runserver  
+```
 ## By Rodgers Mogaka
 
 
