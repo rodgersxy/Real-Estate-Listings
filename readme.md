@@ -11,7 +11,13 @@
 - [FontAwesome](https://fontawesome.com/)  
 - [Bootstrap](https://getbootstrap.com/)
 
-
+## MySQL used commands
+```
+SHOW DATABASES;  
+SHOW TABLES;  
+eg  
+SELECT * FROM listings_listing;  
+``` 
 ## By Rodgers Mogaka
 
 
