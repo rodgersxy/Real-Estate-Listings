@@ -24,11 +24,19 @@ eg
 SELECT * FROM listings_listing;  
 ``` 
 
+
 ## How to Run the real estate project:  
 ```
 source venv/bin/activate    
 python manage.py runserver  
 ```
+
+## start django project
+```
+(venv)django-admin startproject projectName .
+(venv)python manage.py startapp appName
+```
+
 ## By Rodgers Mogaka
 
 
