@@ -1,3 +1,4 @@
+![Screenshot from 2024-03-14 13-09-15](https://github.com/rodgersxy/Real-Estate-Listings/assets/47353893/7febdf74-5c51-442b-9ee1-3d66a9d7ced2)
 ## Built With
 
 - [Python 3](https://www.python.org/) - High level Programming language
